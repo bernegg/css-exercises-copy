@@ -1,7 +1,7 @@
-/* div {
-  red background
-  white text
+div {
+  background-color:red;
+  color:white;
   font-size:32px;
-  center-aligned
-  Bold
-} */
+  text-align:center;
+  font-weight: bold;
+}
