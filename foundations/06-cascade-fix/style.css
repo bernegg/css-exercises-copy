@@ -8,20 +8,16 @@ body {
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
 
 .para {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
+/* move .small-para down since it's more specific than button so that it can override it */
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -29,14 +25,23 @@ body {
   font-size: 20px;
 }
 
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
-}
+/* move .confirm down since it's more specific than button so that it can override it */
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
 
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+/* specified the ancestor .text and put .child last to override div.text*/
+.text .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
 }
