@@ -10,7 +10,7 @@ body {
   padding: 8px;
 }
 
-.title, .content, .button-container {
+.card > * {
   margin-bottom: 8px;
   background: #e3f4ff;
   padding: 8px;
